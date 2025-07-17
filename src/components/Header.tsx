@@ -63,9 +63,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
               Home
             </a>
           </li>
-          <li className="nav-item">
-            <a href="#about" className="nav-link" onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}>About</a>
-          </li>
+        
           <li className="nav-item">
             <a 
               href="#" 
