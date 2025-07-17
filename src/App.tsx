@@ -12,6 +12,7 @@ import Tracks from './components/Tracks';
 import Registration from './components/Registration';
 import Sponsors from './components/Sponsors';
 import Footer from './components/Footer';
+import Speakers from './components/Speakers';
 
 function App() {
   const [currentPage, setCurrentPage] = React.useState('home');
@@ -24,6 +25,12 @@ function App() {
         return <SubmissionGuidelines />;
       case 'gallery':
         return <Gallery />;
+      case 'speakers':
+        return <Speakers />;
+      case 'call-for-papers':
+        return <CallForPapers />;
+      case 'important-dates':
+        return <ImportantDates />;
       default:
         return (
           <>

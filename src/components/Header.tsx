@@ -76,7 +76,13 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#speakers" className="nav-link">Speakers</a>
+            <a 
+              href="#" 
+              className={`nav-link ${currentPage === 'speakers' ? 'active' : ''}`}
+              onClick={(e) => { e.preventDefault(); handleNavClick('speakers'); }}
+            >
+              Speakers
+            </a>
           </li>
           <li className="nav-item">
             <a 
@@ -99,18 +105,27 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => {
               Authors
             </a>
             <div className={`dropdown-menu ${isDropdownOpen ? 'show' : ''}`}>
-              <a className="dropdown-item" href="#call-for-papers">Call For Papers</a>
               <a 
                 className="dropdown-item" 
                 href="#" 
-                onClick={(e) => { 
-                  e.preventDefault(); 
-                  handleNavClick('submission-guidelines'); 
-                }}
+                onClick={(e) => { e.preventDefault(); handleNavClick('call-for-papers'); }}
+              >
+                Call For Papers
+              </a>
+              <a 
+                className="dropdown-item" 
+                href="#" 
+                onClick={(e) => { e.preventDefault(); handleNavClick('submission-guidelines'); }}
               >
                 Submission Guidelines
               </a>
-              <a className="dropdown-item" href="#important-dates">Important Dates</a>
+              <a 
+                className="dropdown-item" 
+                href="#" 
+                onClick={(e) => { e.preventDefault(); handleNavClick('important-dates'); }}
+              >
+                Important Dates
+              </a>
             </div>
           </li>
           <li className="nav-item">

@@ -58,16 +58,7 @@ const Registration = () => {
                     Student ID verification for student rates
                   </p>
                 </div>
-                <div className="col-md-6">
-                  <p className="text-white mb-2">
-                    <i className="fas fa-check-circle me-2 text-success"></i>
-                    Early bird discounts available
-                  </p>
-                  <p className="text-white mb-2">
-                    <i className="fas fa-check-circle me-2 text-success"></i>
-                    Group registration discounts
-                  </p>
-                </div>
+            
               </div>
             </div>
 

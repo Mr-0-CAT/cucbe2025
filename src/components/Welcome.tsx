@@ -78,8 +78,8 @@ const Welcome = () => {
                     <div className="stat-icon mb-3">
                       <i className="fas fa-globe fa-2x text-success"></i>
                     </div>
-                    <h3 className="h2 fw-bold text-success mb-2">25+</h3>
-                    <p className="text-muted mb-0">Countries</p>
+                    <h3 className="h2 fw-bold text-success mb-2">Global</h3>
+                    <p className="text-muted mb-0">Reach</p>
                   </div>
                 </div>
                 <div className="col-6">

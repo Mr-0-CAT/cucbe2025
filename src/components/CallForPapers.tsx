@@ -2,7 +2,7 @@ import React from 'react';
 
 const CallForPapers = () => {
   return (
-    <div className="container fade-in-up">
+    <div className="container fade-in-up" style={{ marginTop: '2.5rem' }}>
       <p className="section-title text-secondary justify-content-center"><span></span>Participate<span></span></p>
       <h1 style={{textAlign: 'center', paddingBottom: '2%', color: '#004080', fontSize: '2.8rem'}}>Call For Papers</h1>
       <div className="row">
