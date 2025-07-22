@@ -11,8 +11,7 @@ const OrganizingCommittee = () => {
           name: "Mr. Karan Shetty", 
           designation: "CEO, RN Shetty Group of Institutions"
         }
-      ],
-      color: "from-purple-600 to-purple-800"
+      ]
     },
     {
       title: "Patrons",
@@ -30,8 +29,7 @@ const OrganizingCommittee = () => {
           name: "Dr. Ramesh Babu H S",
           designation: "Principal, RNSIT"
         }
-      ],
-      color: "from-blue-600 to-blue-800"
+      ]
     },
     {
       title: "General Chair",
@@ -48,8 +46,7 @@ const OrganizingCommittee = () => {
           name: "Prof. Anandi Giridharan",
           designation: "Principal Research Scientist, IISc, Bangalore"
         }
-      ],
-      color: "from-green-600 to-green-800"
+      ]
     },
     {
       title: "Publication Chair",
@@ -58,8 +55,7 @@ const OrganizingCommittee = () => {
           name: "Dr. Rajini V Honnungar",
           designation: "HoD & Professor, ECE Dept., RNSIT"
         }
-      ],
-      color: "from-orange-600 to-orange-800"
+      ]
     },
     {
       title: "Finance Chair", 
@@ -68,8 +64,7 @@ const OrganizingCommittee = () => {
           name: "Dr. Roopa Nayak",
           designation: "HoD & Associate Professor, EEE Dept., RNSIT"
         }
-      ],
-      color: "from-red-600 to-red-800"
+      ]
     },
     {
       title: "Technical Program Committee",
@@ -90,8 +85,7 @@ const OrganizingCommittee = () => {
           name: "Dr. Parameshachari B D",
           designation: "HoD & Professor, NMIT, Bangalore"
         }
-      ],
-      color: "from-indigo-600 to-indigo-800"
+      ]
     },
     {
       title: "Technical Chair",
@@ -104,21 +98,20 @@ const OrganizingCommittee = () => {
           name: "Dr. Leena Chandrashekar",
           designation: "Associate Professor, ECE Dept., RNSIT"
         }
-      ],
-      color: "from-teal-600 to-teal-800"
+      ]
     }
   ];
 
   return (
-    <div className="organizing-committee-page">
+    <div className="organizing-committee-page" style={{ background: '#f8f9fa', minHeight: '100vh' }}>
       {/* Header Section */}
       <div className="committee-header">
         <div className="container py-5">
-          <div className="text-center fade-in-up">
+          <div className="text-center">
             <p className="section-title text-secondary justify-content-center">
               <span></span>Meet Our Team<span></span>
             </p>
-            <h1 className="display-4 fw-bold mb-4" style={{color: '#004080'}}>
+            <h1 className="display-4 fw-bold mb-4" style={{color: '#1a237e'}}>
               Organizing Committee
             </h1>
             <p className="lead text-muted mb-0" style={{fontSize: '1.3rem', maxWidth: '800px', margin: '0 auto'}}>
@@ -132,18 +125,18 @@ const OrganizingCommittee = () => {
       <div className="container py-5">
         <div className="committee-sections">
           {committeeData.map((section, index) => (
-            <div key={index} className="committee-section-wrapper fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
-              <div className="committee-card-aligned">
-                <div className={`committee-header-card bg-gradient-to-r ${section.color}`}>
-                  <h3 className="committee-title-aligned">{section.title}</h3>
+            <div key={index} className="committee-section-wrapper mb-4">
+              <div className="committee-card-aligned" style={{ border: '1px solid #e0e0e0', borderRadius: 8, background: '#fff', boxShadow: '0 1px 4px rgba(0,0,0,0.03)' }}>
+                <div className="committee-header-card" style={{ background: '#e3eafc', borderBottom: '1px solid #e0e0e0', borderTopLeftRadius: 8, borderTopRightRadius: 8, padding: '12px 24px' }}>
+                  <h3 className="committee-title-aligned" style={{ color: '#1a237e', margin: 0, fontWeight: 600 }}>{section.title}</h3>
                 </div>
-                <div className="committee-members-aligned">
+                <div className="committee-members-aligned" style={{ padding: '16px 24px' }}>
                   {section.members.map((member, memberIndex) => (
-                    <div key={memberIndex} className="member-item-aligned">
+                    <div key={memberIndex} className="member-item-aligned" style={{ marginBottom: 12, borderBottom: memberIndex !== section.members.length - 1 ? '1px solid #f0f0f0' : 'none', paddingBottom: 12 }}>
                       <div className="member-info-aligned">
-                        <h4 className="member-name-aligned">{member.name}</h4>
+                        <h4 className="member-name-aligned" style={{ margin: 0, fontSize: '1.1rem', fontWeight: 500, color: '#222' }}>{member.name}</h4>
                         {member.designation && (
-                          <p className="member-designation-aligned">{member.designation}</p>
+                          <p className="member-designation-aligned" style={{ margin: 0, color: '#555', fontSize: '0.98rem' }}>{member.designation}</p>
                         )}
                       </div>
                     </div>
@@ -159,7 +152,7 @@ const OrganizingCommittee = () => {
       <div className="committee-contact-section">
         <div className="container py-5">
           <div className="text-center">
-            <h3 className="mb-4" style={{color: '#004080'}}>Get in Touch</h3>
+            <h3 className="mb-4" style={{color: '#1a237e'}}>Get in Touch</h3>
             <p className="text-muted mb-4">
               For any queries regarding the conference organization, please feel free to contact our organizing committee.
             </p>
