@@ -18,13 +18,14 @@ const OrganizingCommittee = () => {
       title: "Patrons",
       members: [
         {
-          name: "Dr. M K Venkatesha",
-          designation: "Director, RNSIT"
-        },
-        {
           name: "Mr. Murali Krishna K Mysore",
           designation: "CTO, RNS Group of Institutions"
         },
+        {
+          name: "Dr. M K Venkatesha",
+          designation: "Director, RNSIT"
+        },
+       
         {
           name: "Dr. Ramesh Babu H S",
           designation: "Principal, RNSIT"
@@ -37,15 +38,15 @@ const OrganizingCommittee = () => {
       members: [
         {
           name: "Dr. Vipula Singh",
-          designation: ""
+          designation: "Professor, ECE Dept., RNSIT "
         },
         {
           name: "Dr. S Sumathi",
-          designation: ""
+          designation: "Dean and Professor, EEE Dept., RNSIT "
         },
         {
           name: "Prof. Anandi Giridharan",
-          designation: ""
+          designation: "Principal Research Scientist, IISc, Bangalore"
         }
       ],
       color: "from-green-600 to-green-800"
@@ -55,7 +56,7 @@ const OrganizingCommittee = () => {
       members: [
         {
           name: "Dr. Rajini V Honnungar",
-          designation: ""
+          designation: "HoD & Professor, ECE Dept., RNSIT"
         }
       ],
       color: "from-orange-600 to-orange-800"
@@ -65,7 +66,7 @@ const OrganizingCommittee = () => {
       members: [
         {
           name: "Dr. Roopa Nayak",
-          designation: ""
+          designation: "HoD & Associate Professor, EEE Dept., RNSIT"
         }
       ],
       color: "from-red-600 to-red-800"
@@ -75,19 +76,19 @@ const OrganizingCommittee = () => {
       members: [
         {
           name: "Dr. T. Srinivas",
-          designation: ""
+          designation: "Professor in ECE Dept, IISc, Bangalore"
         },
         {
           name: "Dr. Navin Kumar",
-          designation: ""
+          designation: "Professor, ECE Dept., Amrita School of Engg., Bangalore"
         },
         {
           name: "Dr. Abhishek Appaji",
-          designation: ""
+          designation: "Associate Professor, B.M.S. College of Engineering, Bangalore"
         },
         {
           name: "Dr. Parameshachari B D",
-          designation: ""
+          designation: "HoD & Professor, NMIT, Bangalore"
         }
       ],
       color: "from-indigo-600 to-indigo-800"
@@ -97,11 +98,11 @@ const OrganizingCommittee = () => {
       members: [
         {
           name: "Dr. Ibrar Jahan M A",
-          designation: ""
+          designation: "Associate Professor, ECE Dept., RNSIT"
         },
         {
           name: "Dr. Leena Chandrashekar",
-          designation: ""
+          designation: "Associate Professor, ECE Dept., RNSIT"
         }
       ],
       color: "from-teal-600 to-teal-800"
