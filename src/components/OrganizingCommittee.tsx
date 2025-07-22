@@ -37,15 +37,15 @@ const OrganizingCommittee = () => {
       members: [
         {
           name: "Dr. Vipula Singh",
-          designation: "Professor, ECE Dept., IISc, Bangalore"
+          designation: ""
         },
         {
           name: "Dr. S Sumathi",
-          designation: "Professor, EEE Dept., IISc, Bangalore"
+          designation: ""
         },
         {
           name: "Prof. Anandi Giridharan",
-          designation: "Principal Research Scientist, IISc, Bangalore"
+          designation: ""
         }
       ],
       color: "from-green-600 to-green-800"
@@ -55,7 +55,7 @@ const OrganizingCommittee = () => {
       members: [
         {
           name: "Dr. Rajini V Honnungar",
-          designation: "Professor, ECE Dept., RNSIT, Bangalore"
+          designation: ""
         }
       ],
       color: "from-orange-600 to-orange-800"
@@ -65,7 +65,7 @@ const OrganizingCommittee = () => {
       members: [
         {
           name: "Dr. Roopa Nayak",
-          designation: "Professor, EEE Dept., RNSIT, Bangalore"
+          designation: ""
         }
       ],
       color: "from-red-600 to-red-800"
@@ -75,19 +75,19 @@ const OrganizingCommittee = () => {
       members: [
         {
           name: "Dr. T. Srinivas",
-          designation: "Professor, ECE Dept., IISc, Bangalore"
+          designation: ""
         },
         {
           name: "Dr. Navin Kumar",
-          designation: "Associate Professor, B.M.S. College of Engineering, Bangalore"
+          designation: ""
         },
         {
           name: "Dr. Abhishek Appaji",
-          designation: "Assistant Professor, BMSCE, Bangalore"
+          designation: ""
         },
         {
           name: "Dr. Parameshachari B D",
-          designation: "Professor, NMIT, Bangalore"
+          designation: ""
         }
       ],
       color: "from-indigo-600 to-indigo-800"
@@ -97,11 +97,11 @@ const OrganizingCommittee = () => {
       members: [
         {
           name: "Dr. Ibrar Jahan M A",
-          designation: "Professor, ECE Dept., RNSIT, Bangalore"
+          designation: ""
         },
         {
           name: "Dr. Leena Chandrashekar",
-          designation: "Professor, EEE Dept., RNSIT, Bangalore"
+          designation: ""
         }
       ],
       color: "from-teal-600 to-teal-800"
@@ -133,10 +133,10 @@ const OrganizingCommittee = () => {
           {committeeData.map((section, index) => (
             <div key={index} className="committee-section-wrapper fade-in-up" style={{animationDelay: `${index * 0.1}s`}}>
               <div className="committee-card-aligned">
-                <div className={`committee-header-card`} style={{ background: '#fff', borderBottom: '2px solid #004080', borderRadius: '8px 8px 0 0', padding: '1rem 1.5rem' }}>
-                  <h3 className="committee-title-aligned" style={{ color: '#004080', margin: 0 }}>{section.title}</h3>
+                <div className={`committee-header-card bg-gradient-to-r ${section.color}`}>
+                  <h3 className="committee-title-aligned">{section.title}</h3>
                 </div>
-                <div className="committee-members-aligned" style={{ background: '#fff', border: '1px solid #e0e0e0', borderTop: 'none', borderRadius: '0 0 8px 8px', padding: '1.5rem' }}>
+                <div className="committee-members-aligned">
                   {section.members.map((member, memberIndex) => (
                     <div key={memberIndex} className="member-item-aligned">
                       <div className="member-info-aligned">
