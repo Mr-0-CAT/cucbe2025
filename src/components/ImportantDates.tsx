@@ -13,7 +13,7 @@ const ImportantDates = () => {
           <div className="timeline-item timeline-left">
             <div className="timeline-content">
               <h4>Submission of Papers</h4>
-              <p>July 1st 2025</p>
+              <p>August 15th 2025</p>
             </div>
           </div>
           <div className="timeline-item timeline-right">
