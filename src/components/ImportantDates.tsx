@@ -31,7 +31,7 @@ const ImportantDates = () => {
           <div className="timeline-item timeline-right">
             <div className="timeline-content">
               <h4>Registration	</h4>
-              <p>Sept 30, 2025</p>
+              <p>Oct 10, 2025</p>
             </div>
           </div>
           <div className="timeline-item timeline-left">
