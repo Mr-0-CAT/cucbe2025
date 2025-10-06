@@ -1,4 +1,7 @@
 import React from 'react';
+import imgJairam from '../speaker img/WhatsApp Image 2025-10-06 at 09.39.04.jpeg';
+import imgSrinivas from '../speaker img/WhatsApp Image 2025-10-06 at 09.52.02.jpeg';
+import imgPraveen from '../speaker img/WhatsApp Image 2025-09-30 at 11.05.23.jpeg';
 
 const Speakers = () => {
   return (
@@ -36,7 +39,7 @@ const Speakers = () => {
             }}>
               <div className="flex-shrink-0 me-4" style={{width: '140px'}}>
                 <img 
-                  src="/src/speaker img/WhatsApp Image 2025-10-06 at 09.39.04.jpeg" 
+                  src={imgJairam} 
                   alt="Jairam Sukumar"
                   className="img-fluid rounded"
                   style={{
@@ -73,7 +76,7 @@ const Speakers = () => {
             }}>
               <div className="flex-shrink-0 me-4" style={{width: '140px'}}>
                 <img 
-                  src="/src/speaker img/WhatsApp Image 2025-10-06 at 09.52.02.jpeg" 
+                  src={imgSrinivas} 
                   alt="Dr T Srinivas"
                   className="img-fluid rounded"
                   style={{
@@ -124,7 +127,7 @@ const Speakers = () => {
             }}>
               <div className="flex-shrink-0 me-4" style={{width: '140px'}}>
                 <img 
-                  src="/src/speaker img/WhatsApp Image 2025-09-30 at 11.05.23.jpeg" 
+                  src={imgPraveen} 
                   alt="Dr Praveen C Ramamurthy"
                   className="img-fluid rounded"
                   style={{
