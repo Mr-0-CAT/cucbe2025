@@ -39,7 +39,7 @@ const Speakers = () => {
             }}>
               <div className="flex-shrink-0 me-4" style={{width: '140px'}}>
                 <img 
-                  src={imgJairam} 
+                  src="https://festindia.manve.co/storage/v1/object/public/new//PHOTO-2025-10-09-12-03-24.jpg" 
                   alt="Jairam Sukumar"
                   className="img-fluid rounded"
                   style={{
